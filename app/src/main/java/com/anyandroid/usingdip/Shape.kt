@@ -1,14 +1,8 @@
 package com.anyandroid.usingdip
 
-class Shape {
-    var square: Square
-    var circle: Circle
-    var rectangle: Rectangle
-    init {
-        square = Square()
-        circle = Circle()
-        rectangle = Rectangle()
-    }
+class Shape(private var square: Square, private var circle: Circle, private var rectangle: Rectangle) {
+
+
     fun draw() {
         square.draw()
         circle.draw()
