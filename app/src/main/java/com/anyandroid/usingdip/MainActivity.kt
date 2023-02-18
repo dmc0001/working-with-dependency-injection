@@ -7,7 +7,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val shape = Shape()
-        shape.draw()
+        val circle = Circle()
+        val square = Square()
+        val rectangle = Rectangle()
+        val shape = Shape(square, circle, rectangle)
+
     }
 }
