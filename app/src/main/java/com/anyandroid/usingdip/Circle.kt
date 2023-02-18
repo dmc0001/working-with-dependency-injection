@@ -1,9 +1,8 @@
 package com.anyandroid.usingdip
 
+import javax.inject.Inject
 
 
-class Circle {
-    fun draw() {
-        println("Drawing a circle")
-    }
+class Circle @Inject constructor() {
+
 }

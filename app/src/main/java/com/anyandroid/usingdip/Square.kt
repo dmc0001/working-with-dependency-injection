@@ -1,7 +1,7 @@
 package com.anyandroid.usingdip
 
-class Square {
-    fun draw() {
-        println("Drawing a square")
-    }
+import javax.inject.Inject
+
+class Square @Inject constructor() {
+
 }
